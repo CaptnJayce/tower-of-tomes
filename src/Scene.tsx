@@ -1,22 +1,10 @@
-import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import * as THREE from "three";
 
-function Cube() {
-  const meshRef = useRef<THREE.Mesh>(null);
-
-  useFrame((_state, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.x += delta;
-      meshRef.current.rotation.y += delta;
-    }
-  });
-
+function Disc() {
   return (
-    <mesh ref={meshRef}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="#ff4500" />
+    <mesh rotation={[-Math.PI / 0.5, 0, 0]}>
+      <cylinderGeometry args={[1.5, 1.5, 0.02, 64]} />
+      <meshStandardMaterial color="#f5f5f0" />
     </mesh>
   );
 }
@@ -24,9 +12,9 @@ function Cube() {
 export default function Scene() {
   return (
     <>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[2, 2, 2]} />
-      <Cube />
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[2, 3, 2]} intensity={1} />
+      <Disc />
       <OrbitControls />
     </>
   );

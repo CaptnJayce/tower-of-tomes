@@ -1,5 +1,7 @@
 import { ELEMENTS } from "./types/spell";
 import { useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import Scene from "./Scene";
 
 export default function App() {
   const [currentSpell, setCurrentSpell] = useState<string | null>(null);
@@ -34,7 +36,11 @@ export default function App() {
         </div>
       </div>
 
-      <div className="w-3/4 bg-gray-700"></div>
+      <div className="w-3/4 bg-gray-800 rounded-lg overflow-hidden">
+        <Canvas camera={{ position: [2, 2, 3] }}>
+          <Scene />
+        </Canvas>
+      </div>
     </div>
   );
 }
