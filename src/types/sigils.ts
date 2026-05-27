@@ -1,8 +1,8 @@
-import fireSvg from "../assets/elements/Fire.svg";
-import waterSvg from "../assets/elements/Water.svg";
-import earthSvg from "../assets/elements/Earth.svg";
-import windSvg from "../assets/elements/Wind.svg";
-import lightSvg from "../assets/elements/Light.svg";
+import fireSvg from "../assets/sigils/Fire.svg";
+import waterSvg from "../assets/sigils/Water.svg";
+import earthSvg from "../assets/sigils/Earth.svg";
+import windSvg from "../assets/sigils/Wind.svg";
+import lightSvg from "../assets/sigils/Light.svg";
 
 export const ELEMENTS = [
   {
