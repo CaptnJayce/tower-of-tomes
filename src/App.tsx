@@ -1,4 +1,5 @@
 import { ELEMENTS } from "./types/sigils";
+import { SIGNS } from "./types/signs";
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
@@ -31,6 +32,14 @@ export default function App() {
                   ({element.alt_name})
                 </span>
               </span>
+            </button>
+          ))}
+        </div>
+
+        <div>
+          {SIGNS.map((sign) => (
+            <button key={sign.name}>
+              <img src={sign.image} alt={sign.name} />
             </button>
           ))}
         </div>
