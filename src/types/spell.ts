@@ -2,6 +2,7 @@ import fireSvg from "../assets/elements/Fire.svg";
 import waterSvg from "../assets/elements/Water.svg";
 import earthSvg from "../assets/elements/Earth.svg";
 import windSvg from "../assets/elements/Wind.svg";
+import lightSvg from "../assets/elements/Light.svg";
 
 export const ELEMENTS = [
   {
@@ -27,6 +28,12 @@ export const ELEMENTS = [
     alt_name: "Air",
     image: windSvg,
     color: "#ffffff",
+  },
+  {
+    name: "Lux",
+    alt_name: "Light",
+    image: lightSvg,
+    color: "#ffff00",
   },
 ];
 
