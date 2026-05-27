@@ -36,10 +36,16 @@ export default function App() {
         </div>
       </div>
 
-      <div className="w-3/4 bg-gray-800 rounded-lg overflow-hidden">
-        <Canvas camera={{ position: [2, 2, 3] }}>
-          <Scene />
+      <div className="w-3/4 bg-gray-800 rounded-lg overflow-hidden relative">
+        <Canvas camera={{ position: [0, -1.5, 4] }}>
+          <Scene currentSpell={currentSpell} />
         </Canvas>
+        <div
+          id="camera-debug"
+          className="absolute bottom-2 left-2 text-xs font-mono bg-black/60 text-slate-300 px-2 py-1 rounded"
+        >
+          pos: [?, ?, ?]  |  rot: [?, ?, ?]
+        </div>
       </div>
     </div>
   );
