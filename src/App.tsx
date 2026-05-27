@@ -1,4 +1,4 @@
-import { ELEMENTS } from "./types/spell";
+import { ELEMENTS } from "./types/sigils";
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
@@ -44,7 +44,7 @@ export default function App() {
           id="camera-debug"
           className="absolute bottom-2 left-2 text-xs font-mono bg-black/60 text-slate-300 px-2 py-1 rounded"
         >
-          pos: [?, ?, ?]  |  rot: [?, ?, ?]
+          pos: [?, ?, ?] | rot: [?, ?, ?]
         </div>
       </div>
     </div>

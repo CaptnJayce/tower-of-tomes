@@ -1,7 +1,7 @@
 import { OrbitControls, useTexture } from "@react-three/drei";
 import { useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
-import { ELEMENTS } from "./types/spell";
+import { ELEMENTS } from "./types/sigils";
 
 function Disc() {
   return (
